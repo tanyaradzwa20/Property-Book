@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+   <link rel="stylesheet" href="owl.carousel.min.css">
+   <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="fontawesome-5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color:whitesmoke;">
+    
+
+  <!-- header start -->
+  <nav class="navbar navbar-expand-lg" id="nav">
+    <div class="container">
+    <a class="navbar-brand main-img" href="index.html"><img src="images/Images/Harare Rentals Logo.png" alt=""></a>
+    <button class="navbar-toggler ml-auto border-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="listings-page.html">Rentals <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="single.html">Property to rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  position-relative dollar" ><img  src="featured/currency-switcher.png" alt=""></a>
+        </li>
+       
+        <li class="nav-item">
+           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><img src="featured/login-icon.png" alt=""></span>  login</a>
+        </li>
+      </ul>
+      <div class="currency-container position-absolute">
+        <div class="currency-menu">
+            <ul class="list-unstyled currency-ul">
+                <li style="font-weight: bold">
+                    <a class="bg-default" href="javascript:void(0)" >USD - Foreign Transactions</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" >ZWL - Local Transactions</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </nav>
+ <!-- LOGIN MODAL -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel" >Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="post" class="form-group">
+           <input class="form-control" type="phone number" placeholder="Phone Number" required>
+           <input class="form-control" type="pasword" placeholder="Password" required>
+           <button class="form-control" role="button">SIGN IN</button>
+          </form>
+          <p>Forgot Password click  <a href="">HERE</a> To Reset </p>
+        </div>
+       
+         
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+<!-- BILLBOARD -->
+<section class="hero listings-hero" id="billboard">
+  <div class="overlay"> </div> 
+   <div class="search container">
+     <form action="post" class="d-flex">
+     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>search</button>
+   </form>
+   <span class="dropdown-wrapper" aria-hidden="true"></span>
+   <!-- Example split danger button -->
+   <ul class="nav"> 
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Property type
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#" >5</a>
+           <a class="dropdown-item" href="#" >10</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Min Price
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Flat</a>
+           <a class="dropdown-item" href="#">Full house</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Max Price
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">1</a>
+           <a class="dropdown-item" href="#">4</a>
+           <a class="dropdown-item" href="#">Full house</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+           Beds
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Bathrooms
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+   </ul>
+   </div>
+ </section>
+
+<section class="rentals">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+          <h3>Rentals in Harare</h3>
+          <!-- start breadcrumb -->
+            <div class="container-breadcrumb">
+               <div class="breadcrumb ">
+                 <a href="#" active>
+                  <span class="breadcrumb__inner">
+                  <span class="breadcrumb__title">Back to Results</span>
+                  </span>
+                 </a>
+                 <a href="#">
+                   <span class="breadcrumb__inner">
+                   <span class="breadcrumb__title">Harare Province</span>
+                   </span>
+                 </a>
+    <a href="#">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title">Harare East</span>
+      </span>
+    </a>
+    <a href="#">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title">Borrowdale</span>
+      </span>
+    </a>
+    <a href="#">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title">PGP2671</span>
+      </span>
+    </a>
+  </div>
+</div>
+        </div>
+          <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+            <div>
+              <div class="agencies">
+                <div class="card">
+                    <div>
+                      <h2>Join Our Facebook Group</h2>
+                    <img src="images/groups-pic.jpg" alt="harare rentals">
+                    <a href="#">Join Now</a>
+                  </div>
+            
+                </div>
+              </div>
+              <div class="card">
+                  <h3>Our mailing list</h3>
+                  <p>Recieve our proper highlights</p>
+                  <div>
+                      <input type="text" placeholder="Email Address">
+                      <a href="#">Subscribe</a>
+                  </div>
+              </div>
+              <div class="fb-page" data-href="https://www.facebook.com/harare.rentals.houses.to.rent.in.Harare.Zimbabwe/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/propertybookzim/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/propertybookzim/">Harare Rentals</a></blockquote></div>
+              <div class="related-search">
+                <h3>Properties to rent in Harare</h3>
+                <hr>
+                <a href="#">Cottage to rent in Harare</a>
+                <hr>
+                <a href="#">Stands to rent in Harare</a>
+                <hr>
+                <a href="#">Offices to rent in Harare</a>
+                <hr>
+                <a href="#">Land to rent in Harare</a>
+                <hr>
+                <a href="#">Rooms to rent in Harare</a>
+                <hr>
+                <a href="#">Stands to rent in Harare</a>
+                <hr>
+                <a href="#">Cottage to rent in Harare</a>
+                <hr>
+                <a href="#">Land to rent in Harare</a>
+                <hr>
+                <a href="#">Rooms to rent</a>
+                <hr>
+                <a href="#">Apartments to rent</a>
+                <hr>
+                <a href="#">Land to rent in Harare</a>
+                <hr>
+              </div>
+       
+            </div>
+          </div> 
+
+            <div class="col-md-12 col-sm-12 col-lg-8 col-12">
+                <div class="rentals-results">
+                  <div>
+                    <p>Properties Showing 1 out of 3</p> 
+                 </div>
+                    <div>
+                      <div class="user-id">
+                        <p class="user-name">Sort by :</p>
+                        <div class="dropdown-arrow btnn"></div>
+                        <div class="dropdown-menu drop-menu">
+                            <div>
+                                <a href="javascript:void(0)" >   Default</a>
+                                <a href="javascript:void(0)" >   Featured Listings</a>
+                                <a href="javascript:void(0)" >   Priority Listings</a>
+                                <a href="javascript:void(0)" >   Ordinary Listings</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div> 
+<!--FEATURED LISTINGS  -->
+<div class="featured ">
+  <div>
+    <h3>USD 855,000/pm</h3>
+    <h3>Borrowdale</h3>
+    <img src="images/pam-golding.png" alt="">
+  </div>
+  <a href="#" class="ribbon">Featured</a>
+    <div class="second">
+          <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="large-img" id="expandImg">
+        <div>
+             <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this,'expandImg')" >
+             <img src="images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this)" >
+        </div>
+        <div>
+          <h5>Harare West, Harare</h5>
+          <hr>
+             <h5>Features</h5>
+             <div>
+                <span> 2 Bathrooms</span>
+                <span> 2 Bedrooms</span>
+                <span> 2 Boreholes</span>
+                <span> 1 kitchen</span>
+
+            </div>
+             <a href="single.html" class="view-more">View details</a>
+        </div>
+      </div>
+<div class="last">
+  <div>
+     <h3>About the property and featured</h3>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+   </div>
+</div>
+</div>
+<!--FEATURED LISTINGS  -->
+<div class="featured ">
+  <div>
+    <h3>USD 855,000/pm</h3>
+    <h3>Borrowdale</h3>
+    <img src="images/pam-golding.png" alt="">
+  </div>
+  <a href="#" class="ribbon">Featured</a>
+    <div class="second">
+          <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="large-img" id="expandImg">
+        <div>
+             <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this,'expandImg')" >
+             <img src="images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this)" >
+        </div>
+        <div>
+          <h5>Harare West, Harare</h5>
+          <hr>
+             <h5>Features</h5>
+             <div>
+                <span> 2 Bathrooms</span>
+                <span> 2 Bedrooms</span>
+                <span> 2 Boreholes</span>
+                <span> 1 kitchen</span>
+
+            </div>
+             <a href="single.html" class="view-more">View details</a>
+        </div>
+      </div>
+<div class="last">
+  <div>
+     <h3>About the property and featured</h3>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+   </div>
+</div>
+</div>
+<!--FEATURED LISTINGS  -->
+<div class="featured ">
+  <div id="bg-white">
+    <h3>USD 855,000/pm</h3>
+    <h3>Borrowdale</h3>
+    <img src="images/palmgold.png" alt="">
+  </div>
+  <a href="#" class="ribbon">Featured</a>
+    <div class="second">
+          <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="large-img" id="expandImg">
+        <div>
+             <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this,'expandImg')" >
+             <img src="images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="property-book-image" class="small-img" onclick="myFunction(this)" >
+        </div>
+        <div>
+          <h5>Harare West, Harare</h5>
+          <hr>
+             <h5>Features</h5>
+             <div>
+                <span> 2 Bathrooms</span>
+                <span> 2 Bedrooms</span>
+                <span> 2 Boreholes</span>
+                <span> 1 kitchen</span>
+
+            </div>
+             <a href="single.html" class="view-more">View details</a>
+        </div>
+      </div>
+<div class="last">
+  <div>
+     <h3>About the property and featured</h3>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+   </div>
+</div>
+</div>
+ <!--END FEATURED LISTINGS  -->
+<!--PRIORITY LISTINGS  -->
+<div class="featured FEATURED">
+  <div> 
+    <h4>USD915,000/pm</h4>
+    <h3>Chitungwiza</h3>
+   
+     <h3 class="feature">PRIORITY</h3>
+
+  </div>
+  <a href="#" class="ribbon">New</a>
+  <div class="priority-list">
+  <div class="second">
+    <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="prio-img" >
+  </div>
+<div class="last">
+  <div>
+    <div class="west">
+     <h3>Harare West, Harare</h3>
+     <img src="images/logo.jpg" alt="">
+    </div>
+     <hr>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+      </div>
+      <div class="prio-icons">
+        <span><i class="fas fa-bed"></i> 2 Beds</span> 
+        <span><i class="fas fa-bath"></i> 3 Bathrooms</span> 
+        <span><i class="fas fa-bed"></i> 2 Beds</span> 
+        <span><i class="fas fa-tint"></i> 2 Borehole</span>  
+         <a href="single.html" class="view-more">View details</a>
+     </div>
+</div>
+</div>
+</div>
+<!-- second -->
+<div class="featured FEATURED">
+  <div> 
+    <h4>USD915,000/pm</h4>
+    <h3>Chitungwiza</h3>
+   
+     <h3 class="feature">PRIORITY</h3>
+
+  </div>
+  <a href="#" class="ribbon">New</a>
+  <div class="priority-list">
+  <div class="second">
+    <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="prio-img" >
+  </div>
+<div class="last">
+  <div>
+    <div class="west">
+     <h3>Harare West, Harare</h3>
+     <img src="images/logo.jpg" alt="">
+    </div>
+     <hr>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+      </div>
+      <div class="prio-icons">
+        <span><i class="fas fa-bed"></i> 2 Beds</span> 
+        <span><i class="fas fa-bath"></i> 3 Bathrooms</span> 
+        <span><i class="fas fa-bed"></i> 2 Beds</span> 
+        <span><i class="fas fa-tint"></i> 2 Borehole</span>  
+
+         <a href="single.html" class="view-more">View details</a>
+     </div>
+</div>
+</div>
+</div>
+<!-- third -->
+<div class="featured FEATURED">
+  <div> 
+    <h4>USD915,000/pm</h4>
+    <h3>Chitungwiza</h3>
+   
+     <h3 class="feature">PRIORITY</h3>
+
+  </div>
+  <a href="#" class="ribbon">New</a>
+  <div class="priority-list">
+  <div class="second">
+    <img src="images/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="property-book-image" class="prio-img" >
+  </div>
+<div class="last">
+  <div>
+    <div class="west">
+     <h3>Harare West, Harare</h3>
+     <img src="images/logo.jpg" alt="">
+    </div>
+     <hr>
+      <p>Definitely not the ordinary rental home: this amazing property offers 3 bedrooms (all en-suite), 3 living areas, a study/pyjama lounge, and a lovely heated pool.</p>
+      </div>
+      <div class="prio-icons">
+        <span><i class="fas fa-bed"></i> 2 Beds</span> 
+        <span><i class="fas fa-bath"></i> 3 Bathrooms</span> 
+        <span><i class="fas fa-bed"></i> 2 Beds</span>
+        <span><i class="fas fa-tint"></i> 2 Borehole</span>  
+         <a href="single.html" class="view-more">View details</a>
+     </div>
+</div>
+</div>
+</div>
+<!--END PRIORITY LISTINGS  -->
+<!-- ORDINARY LISTINGS -->
+<div class="card">
+    <a href="#">New</a>
+    <div class="listings">
+        <img src="images/Images/6b272ab034b7a953187123d3c76687f1.jpg" alt="harare-rentals" class="prio-img">
+        <div>
+            <div>
+                <div>
+                   <h4>Mt Pleaseant</h4> 
+                   <p>Harare West, Harare</p>
+               </div>    
+                <div>
+                    <h5>$1,000</h5>
+                </div>
+
+            </div>
+            <hr>
+            <div>
+                <p>Lorem ipsum dolor, Numquam possimus saepe nemo illum ea corrupti,
+                   consequuntur et labore 
+                </p>
+                 <img src="images/logo.jpg" alt="">
+            </div>
+            <div>
+               <span><i class="fas fa-bed"></i> 1 Beds</span> 
+               <span><i class="fas fa-bath"></i> 1 Bathrooms</span> 
+               <span><i class="fas fa-bed"></i> 1 Beds</span> 
+               <span><i class="fas fa-tint"></i> 2 Borehole</span>  
+                <a href="single.html" class="view-more">View details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <a href="#">Reduced</a>
+    <div class="listings">
+        <img src="images/Images/6b272ab034b7a953187123d3c76687f1.jpg" alt="harare-rentals" class="prio-img">
+        <div>
+            <div>
+                <div>
+                   <h4>Mt Pleaseant</h4> 
+                   <p>Harare West, Harare</p>
+               </div>    
+                <div>
+                    <h5>$1,000</h5>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p>Lorem ipsum dolor, Numquam possimus saepe nemo illum ea corrupti,
+                   consequuntur et labore  
+                </p>
+                 <img src="images/logo.jpg" alt="">
+            </div>
+            <div>
+               <span><i class="fas fa-bed"></i> 1 Beds</span> 
+               <span><i class="fas fa-bath"></i> 1 Bathrooms</span>
+               <span><i class="fas fa-bed"></i> 1 Beds</span> 
+               <span><i class="fas fa-tint"></i> 2 Borehole</span>   
+                <a href="single.html" class="view-more">View details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+  <a href="#">New</a>
+  <div class="listings">
+      <img src="images/Images/6b272ab034b7a953187123d3c76687f1.jpg" alt="harare-rentals" class="prio-img">
+      <div>
+          <div>
+              <div>
+                 <h4>Mt Pleaseant</h4> 
+                 <p>Harare West, Harare</p>
+             </div>    
+              <div>
+                  <h5>$1,000</h5>
+              </div>
+
+          </div>
+          <hr>
+          <div>
+              <p>Lorem ipsum dolor, Numquam possimus saepe nemo illum ea corrupti,
+                 consequuntur et labore 
+              </p>
+               <img src="images/logo.jpg" alt="">
+          </div>
+          <div>
+             <span><i class="fas fa-bed"></i> 1 Beds</span> 
+             <span><i class="fas fa-bath"></i> 1 Bathrooms</span> 
+             <span><i class="fas fa-bed"></i> 1 Beds</span> 
+             <span><i class="fas fa-tint"></i> 2 Borehole</span>  
+              <a href="single.html" class="view-more">View details</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- END ORDINARY LISTINGS -->
+<!-- PAGINATION -->
+<nav aria-label="Page navigation text-center ">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link active-1" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <h5>Property</h5>
+        <ul>
+          <li><a href="">Property for sale</a></li>
+          <li><a href="">Property for rent</a></li>
+          <li><a href="">Developments</a></li>
+          <li><a href="">Commercial Rentals</a></li>
+          <li><a href="">Find an Estate Agent</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Advertise</h5>
+        <ul>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Property book the margazine</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="">Property Advice</a></li>
+          <li><a href="">Mortgage Calculator</a></li>
+          <li><a href="">E.A.C</a></li>
+         
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Facebook Groups</h5>
+        <ul>
+          <li><a href="">harare rentals</a></li>
+          <li><a href=""> harare Property sales</a></li>
+          <li><a href="">harare rooms for rent</a></li>
+          <li><a href="">All Groups(+30)</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!--FOOTER  -->
+
+
+<footer class="main-footer">
+  <div class="container">
+  <div class="footer-inner nav">
+    <ul class="nav">
+      <li>
+        <a href=""> about us</a>
+      </li>
+      <li>
+        <a href=""> contact us</a>
+      </li>
+      <li>
+        <a href=""> terms & conditions</a>
+      </li>
+      <li>
+        <a href=""> private policy</a>
+      </li>
+      <li>
+        <a href="">disclaimer</a>
+      </li>
+    </ul>
+
+    <img src="images/logo.jpeg" alt="">
+  </div>
+  <hr class="hr">
+  <div class="last">
+    <p>This site is protected by copyright and trademark laws under Zimbawe and International <Law class="a">harare rentals.co &copy 2020</Law> </p>
+   
+    <div class="icons">
+      <a href="" class=""><i class="fab fa-facebook-f"></i></a>
+      <a href="" class=""> <i class="fab fa-instagram"></i></a>
+      <a href="" class=""> <i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+</footer>
+<a href="#nav" class="fixed-icon"> <i class="fas fa-angle-up"></i> </a>
+
+<script>
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    
+  }
+  
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="owl.carousel.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=423732618026062&autoLogAppEvents=1" nonce="0b6aKW9G"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
